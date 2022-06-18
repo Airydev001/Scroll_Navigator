@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll and Accept Policy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        body {
+            background: rgb(253, 184, 0);
+
+        }
+
+        button {
+            background: #ff0060;
+            padding: 12px 12px;
+            color: white;
+            margin-top: 12px;
+            border: none;
+            width: 100%;
+            margin-top: 50px;
+
+            transition: all 0.2s;
+
+
+
+        }
+
+        button[disabled] {
+            opacity: 0.1;
+
+        }
+
+        .scroll_events {
+            display: grid;
+            justify-content: center;
+
+
+        }
+
+        .demp {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            padding: 20px 25px;
+            overflow: auto;
+            scrollbar-gutter: auto;
+            scrollbar-arrow-color: white;
+            height: 600px;
+            z-index: -1;
+        }
+
+        *::-webkit-scrollbar {
+
+            width: 7px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(254, 0, 71);
+
+            border-radius: 10px;
+
+        }
+
+        .demp h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        strong {
+            padding: 20px;
+        }
+
+        ::-webkit-scrollbar-button {
+            border: 1px solid rgb(254, 0, 71);
+
+        }
+
+        .overall {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #0065c3;
+            max-height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            display: none;
+
+        }
+
+        .open {
+            display: grid;
+        }
+
+
+        .targets_simple {
+            min-width: 400px;
+            max-width: 500px;
+            height: 500px;
+            background-color: black;
+        }
+
+        .targets_simple img {
+            width: 100%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            margin-top: -20px;
+
+        }
+
+        .closebtn {
+            color: rgb(253, 184, 0);
+            font-size: 3.5rem;
+            float: right;
+
+            margin: 20px;
+            font-weight: 500;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class=" demp">
+        <h1>Google Policy </h1>
+        <i>Read and Understand</i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi explicabo molestias quidem deleniti
+            pariatur
+            possimus quas, quasi excepturi sunt numquam repellat ea porro magnam vitae quibusdam, dolorem
+            dolorum
+            facilis, suscipit laborum totam modi id saepe rerum est! Nisi illo impedit veritatis assumenda aut
+            voluptatum quidem debitis, libero optio cum eius.</p>
+        <h3>Fraudlent and Scam</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, perferendis eveniet. Asperiores
+            ipsam
+            facere error voluptatum in, quibusdam placeat accusantium mollitia, temporibus aut totam sunt!
+            Inventore
+            nemo labore quas sit soluta, molestias recusandae qui cupiditate eius eos deserunt dolorum sed fugit
+            quia
+            sint placeat, veniam voluptas. Ipsam, officia natus deserunt beatae debitis, quasi aliquam a ducimus
+            quidem,
+            consectetur possimus illo.</p>
+
+        <h1>Acccount Policy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi similique nemo itaque aliquam,
+            repudiandae,
+            nesciunt minima libero facilis maxime necessitatibus natus dignissimos quae possimus doloribus
+            molestiae
+            corporis! Ex doloremque et culpa minus suscipit, repudiandae officia dolore velit consequatur
+            pariatur.
+            Amet, sed aliquam, ut repudiandae, non sit repellendus atque itaque quisquam consectetur esse.
+            Quisquam
+            aperiam officia esse excepturi eligendi non impedit ipsum, neque rem ratione inventore natus quia
+            perspiciatis distinctio molestiae est totam nostrum. Harum atque, corrupti perferendis praesentium
+            est,
+            illo
+            optio ea ex natus nisi accusantium odit ipsam animi accusamus, voluptas soluta quisquam ad debitis?
+            Autem
+            esse vitae excepturi cum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sed neque, adipisci at rerum hic doloribus quas
+            beatae illum voluptatibus iusto, nisi fugit aspernatur dicta, veritatis facere cupiditate inventore iste
+            eaque magni perspiciatis dolores officiis! Nobis recusandae voluptates sint animi minima laudantium repellat
+            dolor aperiam ab deleniti ullam tempora praesentium beatae eius provident quam corporis, ipsum maiores magni
+            eveniet quas amet fuga. Labore, totam? Voluptatum, deleniti porro! Possimus autem sequi maxime eos, tempore
+            aliquam, explicabo voluptatum nisi repellendus fugit a? Perferendis quaerat, commodi numquam laboriosam sunt
+            consequatur architecto labore fuga tempore laborum, eius qui aliquam dignissimos vero voluptatum ducimus
+            eveniet?</p>
+        <strong class="watch">watch</strong>
+        <h3>User Liability</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, nobis quisquam, aperiam,
+            omnis
+            optio
+            veritatis quae impedit aliquid nisi minima saepe odio non dolorem. Aliquam cumque asperiores ea ut
+            amet
+            expedita. Quo voluptatem eum velit? Sapiente earum aut ducimus quo ab hic voluptatibus veniam
+            deleniti
+            dolorum iste accusantium enim ipsam voluptatem voluptates exercitationem, at eaque similique
+            corrupti
+            dignissimos. Soluta aut earum consequuntur, explicabo provident ipsam omnis unde sequi, quam
+            necessitatibus
+            laboriosam delectus minus a eum aperiam. Rerum explicabo reprehenderit cum culpa sequi sunt maxime
+            perspiciatis quidem, ducimus, aut quibusdam a dignissimos numquam unde repudiandae minima ipsam
+            necessitatibus aliquid? Tempore dolore nemo architecto earum laboriosam quibusdam soluta at non,
+            quaerat,
+            minima alias id autem temporibus optio. Impedit aspernatur facilis et deserunt. Voluptatum
+            praesentium
+            maiores deleniti magnam, aliquid dolores, quam, facere enim nemo nobis ex similique iste maxime odio
+            perferendis neque exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis incidunt, inventore doloremque
+            sequi
+            nam
+            vero aliquam ea praesentium? Necessitatibus, quibusdam, accusantium numquam quisquam commodi veniam
+            molestiae quod exercitationem cum dolor dolorem atque vero. Saepe officia perspiciatis, atque
+            perferendis
+            asperiores ratione est modi voluptatibus fugiat optio magni consequatur libero porro in rerum,
+            minima
+            facere
+            nisi deserunt debitis a consequuntur nihil repudiandae. Fugit alias a labore blanditiis distinctio.
+            Et,
+            est
+            necessitatibus! Illum atque ipsa pariatur, cum modi nobis velit nemo accusantium soluta nisi? A
+            natus
+            cumque, commodi libero at quasi ipsam excepturi accusamus, temporibus nisi, consectetur totam neque
+            aperiam
+            odit facere officiis!</p>
+        <p disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem repellat doloremque
+            laboriosam
+            aspernatur dolores maxime corrupti officia, dolorum cumque qui blanditiis officiis, nostrum dolor!
+            Distinctio eveniet veniam debitis blanditiis vero unde porro ipsam deserunt, eligendi autem cum beatae ut,
+            quos commodi quia dolor nam molestias id vel vitae esse? Tenetur, sed a beatae sint non mollitia velit
+            quidem quod!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae consequuntur aperiam nobis
+            quas reiciendis! Eum dicta accusamus ullam dolor obcaecati illum ab quae, quasi assumenda quisquam ipsam
+            expedita dolorum rerum quibusdam enim cum at, voluptatibus nulla officia voluptas reprehenderit veritatis.
+            Dicta placeat eaque earum iste, nisi iure error recusandae odit, laboriosam, quidem dolore! Suscipit unde
+            molestiae ipsum, facilis ad vel labore temporibus natus numquam voluptatem at ex odit consequatur error
+            consectetur doloremque nam rem recusandae magnam non quibusdam? Veritatis laborum enim ducimus quis
+            voluptatibus culpa quae recusandae dolorum. Mollitia neque quidem dolores quisquam, nihil earum alias eos
+            saepe amet!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo minus, fugiat deleniti distinctio laudantium
+            id, commodi eos asperiores corporis sed culpa, temporibus natus quae rem architecto fuga similique sit
+            nulla? Fugit voluptatibus eaque libero recusandae eligendi sapiente quasi quae ipsam a dolorem tenetur
+            veniam, quaerat praesentium voluptatem maiores odio blanditiis vero. Magnam laborum voluptates nostrum
+            tempore perferendis facere animi recusandae culpa, porro eveniet earum enim harum voluptatum nobis ducimus
+            debitis aut! Ipsum aperiam ut vel, natus quis architecto similique labore repellat obcaecati hic quae
+            corporis quidem, ipsam facere, consectetur mollitia aliquam! Rerum, fuga corporis rem nihil fugiat voluptas
+            eius maxime!</p>
+        <hr>
+        <button class="accept" disabled> Accept Policy</button>
+
+
+    </div>
+
+    <div class="overall">
+        <div class="targets_simple">
+            <!-- <line x1="4.4" y1="4" x2="25.6" y2="25.2" stroke="white" class="closeleft" stroke-width="4"></line>
+            <line x1="4.4" y1="25.2" x2="25.6" y2="4" stroke="white" class="closeright" stroke-width="4"></line>
+            -->
+
+            <i class="closebtn">&times;</i>
+        </div>
+    </div>
+
+    <script src="scroll_Navigator.js"></script>
+</body>
+
+</html>
